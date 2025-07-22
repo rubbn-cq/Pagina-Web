@@ -4,13 +4,217 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Inter de Milán | Página web </title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <div class="fondo"></div>
+  <header>
+    <div class="nav-menu">
+      <nav class="nav-left">
+        <ul>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">SEASON</a></li>
+          <li><a href="#">CLUB</a></li>
+          <li><a href="#">INTER TV</a></li>
+          <li><a href="#">MADE OF INTER</a></li>
+        </ul>
+      </nav>
+
+      <div class="logo-center">
+        <a href="#">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b6ff0824-6ddd-4503-b5be-3dbc0b60c40f/deh62dt-8ae97051-b9d4-4a20-ae89-e4c78c27234f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2ZmYwODI0LTZkZGQtNDUwMy1iNWJlLTNkYmMwYjYwYzQwZlwvZGVoNjJkdC04YWU5NzA1MS1iOWQ0LTRhMjAtYWU4OS1lNGM3OGMyNzIzNGYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Q0QXKh0HleWBQi--Sm-itXOYmjo6oNUNjqEeTFJZhXk"
+            alt="Inter Logo">
+        </a>
+      </div>
+
+      <nav class="nav-right">
+        <ul>
+          <li><a href="#">INTERISTA</a></li>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">TICKETS</a></li>
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#"><span class="search-icon">🔍</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="presentacion">
+    <img src="https://www.inter.it/binaries/content/gallery/inter/club/byd-press-release/image004.jpg"
+      class="presentacion-img">
+  </section>
+
+  <div class="announcement">
+    <h1>BYD INTER'S NEW GLOBAL<br>AUTOMOTIVE PARTNER</h1>
+    <div class="line"></div>
+
+    <div class="footer-row">
+      <a href="#" class="discover">DISCOVER MORE</a>
+
+      <div class="logos">
+        <img id=nike src="img/nike-logo-removebg-preview.png">
+        <img id=betsson src="img/betsooon-removebg-preview.png" alt="Betsson logo">
+      </div>
+    </div>
+  </div>
+  <section class="inter-kit-section">
+    <h2 class="kit-title">INTER HOME KIT 25/26</h2>
+    <div class="kit-container">
+      <div class="kit-left">
+        <img src="img/wmremove-transformed.jpeg" alt="Inter Players in Kit">
+      </div>
+      <div class="kit-right">
+        <img class="jersey-img" src="img/home-kitt.webp" alt="Inter Jersey">
+        <div class="jersey-info">
+          <p class="product-name">IM NIKE MAGLIA HOME MATCH 2025/26 UOMO</p>
+          <p class="price">€149.99</p>
+          <a href="#" class="shop-button">Shop now</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="trophy-section">
+    <div class="trophy-card" id="liga" style="--bg-img: url('img/inter-seriaA.jpg');">
+      <div class="icon" id="serieA">
+        <img src="img/scuddeto.png" alt="Serie A Icon">
+      </div>
+      <div class="info">
+        <div class="count">20</div>
+        <div class="title">Serie A</div>
+      </div>
+    </div>
+
+
+    <div class="trophy-card" style="--bg-img: url('img/inter-supercoppa.webp');">
+      <div class="icon" id="super">
+        <img src="img/suppercopa-removebg-preview.png" alt="Supercoppa Italiana Icon">
+      </div>
+      <div class="info">
+        <div class="count">8</div>
+        <div class="title">Supercoppa Italiana</div>
+      </div>
+    </div>
+
+    <div class="trophy-card" style="--bg-img: url('img/inter-champions.jpeg');">
+      <div class="icon" id="champions">
+        <img src="img/champions-icon-removebg-preview.png" alt="Champions League Icon">
+      </div>
+      <div class="info">
+        <div class="count">3</div>
+        <div class="title">Champions League</div>
+      </div>
+    </div>
+
+    <div class="trophy-card" style="--bg-img: url('img/inter-coppa.jpg');">
+      <div class="icon" id="copa">
+        <img src="img/copa-removebg-preview.png" alt="Coppa Italia Icon">
+      </div>
+      <div class="info">
+        <div class="count">9</div>
+        <div class="title">Coppa Italia</div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <!-- Título superior -->
+    <div class="footer-top">
+      <h1 class="footer-title">FORZA INTER</h1>
+    </div>
+
+    <!-- Línea blanca -->
+    <div class="footer-line"></div>
+
+    <!-- columnas -->
+    <div class="footer-links">
+      <div class="link-column">
+        <h3>NEWS</h3>
+        <a href="#">TEAMS</a>
+        <a href="#">INTER TV</a>
+        <a href="#">INTER ONLINE STORE ↗</a>
+        <a href="#">INTER OFFICIAL APP ↗</a>
+      </div>
+
+      <div class="link-column">
+        <h3>CLUB</h3>
+        <a href="#">Find the club closest ↗</a>
+        <a href="#">Experience ↗</a>
+        <a href="#">Benefits ↗</a>
+      </div>
+
+      <div class="link-column">
+        <h3>ACADEMY ↗</h3>
+        <a href="#">Contact us ↗</a>
+      </div>
+
+      <div class="link-column">
+        <h3>CAMPUS ↗</h3>
+        <a href="#">Who we are ↗</a>
+        <a href="#">NEWS ↗</a>
+      </div>
+
+      <div class="link-column">
+        <h3>CLUB</h3>
+        <a href="#">Org. chart</a>
+        <a href="#">Hall of Fame</a>
+        <a href="#">Investors</a>
+        <a href="#">Code of ethics & Organizational Models</a>
+        <a href="#">Work with us</a>
+        <a href="#">Transparency</a>
+        <a href="#">Contact</a>
+        <a href="#">Honours</a>
+        <a href="#">I M Inclusion</a>
+        <a href="#">Inter Club</a>
+        <a href="#">Inter Academy</a>
+      </div>
+
+      <div class="link-column">
+        <h3>TICKETS</h3>
+        <a href="#">Punti vendita</a>
+        <a href="#">Stadium</a>
+        <a href="#">Season Pass ↗</a>
+        <a href="#">Parking ↗</a>
+        <a href="#">FAQ</a>
+      </div>
+
+      <div class="link-column">
+        <h3>INTER STORE</h3>
+        <a href="#">INTER STORE MILANO ↗</a>
+        <a href="#">INTER STORE SAN SIRO ↗</a>
+        <a href="#">INTER STORE CASTELLO ↗</a>
+      </div>
+    </div>
+
+    <!-- línea inferior -->
+    <div class="footer-bottom-line"></div>
+
+    <!-- fila final -->
+    <div class="footer-bottom">
+      <div class="language">
+        <span>Language</span>
+        <select>
+          <option selected>English</option>
+          <option>Italiano</option>
+          <option>Español</option>
+          <option>Deutsch</option>
+          <option>Français</option>
+        </select>
+      </div>
+
+      <div class="bottom-links">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookies</a>
+      </div>
+      <div class="copyright">
+        Copyright © 1995 — 2025 F.C. Internazionale Milano P.IVA 04231750151
+      </div>
+    </div>
+  </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,594 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.fondo {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    /* capa negra suave */
+    url('https://www.2playbook.com/uploads/s1/36/90/28/inter-campeon-serie-a-2024.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.presentacion-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  bottom: 200px;
+}
+
+
+.announcement {
+  background-color: #0026A3;
+  color: white;
+  padding: 80px 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.announcement h1 {
+  font-size: 110px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+  font-weight: bold;
+}
+
+.line {
+  width: 100%;
+  height: 23px;
+  background-color: white;
+  margin-bottom: 60px;
+}
+
+.discover {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  width: fit-content;
+}
+
+.discover:hover {
+  opacity: 0.8;
+}
+
+.logos {
+  margin-top: 0px;
+  justify-content: flex-end;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#nike {
+  height: 50px;
+  margin-top: 10px;
+  left: 100px;
+}
+
+#betsson {
+  height: 90px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  /* coloca los logos a la derecha */
+  align-items: center;
+  margin-top: 40px;
+  /* alinea verticalmente con discover */
+}
+
+
+/* El contenido va normalmente, no necesita cambiar */
+
+
+/* CONTENEDOR PRINCIPAL DEL HEADER */
+.nav-menu {
+  position: absolute;
+  color: #fff;
+  top: 49px;
+  width: 99.2%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 62px;
+  box-sizing: border-box;
+  z-index: 999;
+  margin-left: 3px;
+  ;
+}
+
+/* LISTAS DEL MENÚ */
+.nav-menu nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+/* LINKS DEL MENÚ */
+.nav-menu nav a {
+  color: #f5f5f5;
+  /* blanco */
+  text-decoration: none;
+  /* quita subrayado */
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  position: relative;
+  padding: 7px 0px;
+  text-shadow: 0 0 0px rgba(255, 255, 255, 4);
+  /* ✨ brillo sutil */
+}
+
+.nav-menu nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #ffffff;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-menu nav a:hover::after {
+  width: 100%;
+}
+
+/* LOGO CENTRADO */
+.logo-center {
+  position: absolute;
+  left: 50.2%;
+  bottom: 32px;
+  transform: translateX(-50.2%);
+}
+
+.logo-center img {
+  height: 79px;
+}
+
+/* ALINEAR LOS NAV IZQ Y DER */
+.nav-left ul {
+  display: flex;
+  flex-wrap: nowrap;
+  /* NO permitir que bajen de línea */
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-right ul {
+  display: flex;
+  flex-wrap: nowrap;
+  /* NO permitir que bajen de línea */
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+/* ÍCONO DE BÚSQUEDA */
+.search-icon {
+  font-size: 16px;
+}
+
+.announcement::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  width: 100%;
+  background-color: #0026A3;
+  /* o el color de la siguiente sección */
+}
+
+.inter-kit-section {
+  background-color: #ffffff;
+  color: black;
+  padding: 60px 0;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.kit-title {
+  font-size: 20px;
+  font-weight: 550;
+  margin-bottom: 40px;
+  margin-left: 70px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.kit-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.kit-left,
+.kit-right {
+  flex: 1;
+}
+
+.kit-left img {
+  width: 100%;
+  height: 80%;
+  display: block;
+  object-fit: cover;
+}
+
+.jersey-img {
+  width: 100%;
+  height: 52.3%;
+  display: block;
+  object-fit: cover
+}
+
+/* Contenedor negro debajo de la camiseta */
+.jersey-info {
+  background-color: #000;
+  padding: 1px 30px 28px 30px;
+  color: white;
+}
+
+.product-name {
+  font-size: 25px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  font-weight: 550;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 77px;
+}
+
+/* Shop button estilo línea animada */
+.shop-button {
+  position: relative;
+  display: inline-block;
+  font-weight: 550;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding-bottom: 6px;
+}
+
+.shop-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.0;
+  /* línea base sutil */
+}
+
+.shop-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.2s ease-in-out;
+}
+
+.shop-button:hover::after {
+  width: 100%;
+}
+
+.trophy-section {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  background-color: black;
+  padding: 20px 20px 40px 20px;
+  gap: 20px;
+}
+
+.trophy-card {
+  flex: 1;
+  min-width: 250px;
+  height: 400px;
+  background-color: #0028B9;
+  /* Azul Inter por defecto */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-image 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Superposición azul por defecto */
+.trophy-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 40, 185, 0.9);
+  /* azul con opacidad */
+  transition: background-color 0.3s ease-in-out;
+  z-index: 1;
+}
+
+/* Imagen aparece al hacer hover */
+.trophy-card:hover {
+  background-image: var(--bg-img);
+}
+
+/* La superposición se hace más transparente */
+.trophy-card:hover::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Asegura que el contenido quede encima de la superposición */
+.trophy-card .icon,
+.trophy-card .count,
+.trophy-card .title {
+  position: relative;
+  z-index: 2;
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.count {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 18px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.icon img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.trophy-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* mantiene el icono arriba */
+}
+
+/* Agrupa y posiciona el número y título abajo a la izquierda */
+.info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+  z-index: 2;
+}
+
+/* Puedes reducir el tamaño si lo deseas */
+.count {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.title {
+  font-size: 16px;
+  margin: 5px 0 0;
+  text-transform: uppercase;
+}
+
+.trophy-card {
+  position: relative;
+  /* necesario para que .icon se posicione respecto a este contenedor */
+}
+
+.icon {
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  z-index: 2;
+  width: 60px;
+  /* ajusta el tamaño según necesites */
+  height: 60px;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#serieA {
+  width: 75px;
+  height: 75px;
+  top: -10px;
+}
+
+#super {
+  width: 92px;
+  height: 92px;
+  top: -20px;
+  left: -12px
+}
+
+#champions {
+  width: 125px;
+  height: 125px;
+  top: -35px;
+  left: -20px
+}
+
+#copa {
+  width: 100px;
+  height: 300px;
+  top: -123px;
+  left: -10px
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  padding: 40px 60px;
+}
+
+/* Título */
+.footer-top {
+  margin-bottom: 30px;
+}
+
+.footer-title {
+  font-size: 90px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Línea blanca superior */
+.footer-line {
+  height: 6px;
+  background-color: #fff;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/* columnas */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+}
+
+.link-column h3 {
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.link-column a {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.link-column a:hover {
+  text-decoration: underline;
+}
+
+/* línea fina antes de la parte inferior */
+.footer-bottom-line {
+  border-top: 1px solid #333;
+  margin: 40px 0 20px;
+}
+
+/* fila final */
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.language select {
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  appearance: none;
+  /* quita estilos por defecto */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.language select:focus {
+  outline: none;
+}
+
+.bottom-links {
+  display: flex;
+  gap: 25px;
+}
+
+.bottom-links a {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.bottom-links a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 13px;
+  opacity: 0.8;
+}
